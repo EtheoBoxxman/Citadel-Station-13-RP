@@ -194,7 +194,7 @@
 
 /datum/shuttle/web_shuttle/excursion/long_jump(var/area/departing, var/area/destination, var/area/interim, var/travel_time, var/direction)
 	if(prob(abduct_chance))
-		abduct_chance = 0
+		abduct_chance = 0.5
 		var/list/occupants = list()
 		for(var/mob/living/L in departing)
 			occupants += key_name(L)
